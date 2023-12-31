@@ -1,109 +1,89 @@
-*{
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 10px;
-    
-
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 10px;
 }
 
-body{
-    
-    
-
+body {
 }
 
-main{
-    width: 600px;
-    
+main {
+  width: 800px;
+}
+header {
+  color: green;
+  font-size: 30px;
 
 }
-header{
-    color: green;
-    font-size: 30px;
-
+nav {
+  width: 800px;
+  background-color: green;
+  display: inline-block;
 }
-nav{
-    width: 600px;
-    background-color: green;
-    display: inline-block;
-    
-
-    
+nav:hover {
 }
-nav:hover{
-
+nav ul {
 }
-nav ul{
-    
-    
+nav li {
+  float: left;
+  list-style-type: none;
 }
-nav li{
-    float: left;
-    list-style-type: none;
-    
-    
-
+aside {
+  display: grid;
+  float: right;
 }
-aside{
-    display: grid;
-    float: right;
-    
-
+aside img {
+  width: 150px;
+  outline: 1px solid black;
+  outline-offset: 3px;
 }
-aside img{
-    width: 150px;
-    outline: 1px solid black;
-    outline-offset: 3px;
-    
-    
+article {
+  display: flex;
 }
-article{
-    display: flex;
-    
-    
-
+article img {
+  width: 100px;
+  height: 150px;
+  outline: 0.5px solid rgb(226, 223, 223);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
-article img{
-    width: 100px;
-    height: 150px;
-    outline: 0.5px solid rgb(226, 223, 223);
-    outline-offset: 2px;
-    border-radius: 2px;
-    
+article div {
+  display: inline-block;
+  outline: 0.5px solid rgb(226, 223, 223);
 }
-article div{
-    display: inline-block;
-    outline: 0.5px solid rgb(226, 223, 223);
-    
-    
+h2 {
+  font-size: 16px;
+  float: left;
+  border: 0.5px solid rgb(226, 223, 223);
 }
-h2{
-    font-size: 16px;
-    float: left;
-    border: 0.5px solid rgb(226, 223, 223);
-    
-    
+.henry {
+  width: 150px;
 }
-.henry{
-    width: 150px;
-
+.karl {
+  width: 150px;
 }
-.karl{
-    width: 150px;
-
+tr:nth-child(even){
+  background-color: grey;
+  
+}
+tr{
+  text-align: left;
+  height: 35px;
+}
+table{
+  
+  width: 400px;
 }
 @media screen and (max-width: 800px) {
-    main{
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 100%;  
-    }  
-    .henry{
-        grid-template-columns: 1fr;
-    }
-    .karl{
-        grid-template-columns: 1fr;
-    }
-
-
-} 
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+  .henry {
+    grid-template-columns: 1fr;
+  }
+  .karl {
+    grid-template-columns: 1fr;
+  }
+}
